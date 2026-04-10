@@ -1,0 +1,23 @@
+.taglineSection {
+  padding: 36px 80px;
+  text-align: center;
+}
+
+.taglineSection p {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 3.2vw, 50px);
+  line-height: 1.35;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .taglineSection {
+    padding: 24px 20px;
+  }
+
+  .taglineSection p {
+    font-size: clamp(18px, 5.5vw, 26px);
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'LocavoreDisplay';
+  src: url('./fonts/LT_rounded_bold.woff2') format('woff2'),
+       url('./fonts/LT_rounded_bold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'LocavoreBody';
+  src: url('./fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+       url('./fonts/PPNeueMontreal-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ReceiptFont';
+  src: url('./fonts/fake-receipt.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green:  #DAFFBD;
+  --black:  #000000;
+  --white:  #F3F1ED;
+  --orange: #f56a2a;
+  --yellow: #F8EEA2;
+  --font-display: 'LocavoreDisplay', 'Arial Black', sans-serif;
+  --font-body:    'LocavoreBody', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--green);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}

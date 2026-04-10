@@ -1,0 +1,48 @@
+import { useState } from 'react';
+import styles from './Featured.module.css';
+
+export default function Featured() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  return (
+    <section className={styles.featured}>
+      <div className={styles.featuredText}>
+        <h2>This Month: Local Grill Gear, Our Favorite Sunscreen</h2>
+        <a href="#" className={styles.btnDownload}>↓ Download the Circular</a>
+      </div>
+
+      <div className={styles.featuredImage}>
+        <span className={styles.flipText}>
+          FLIP OVER<br />FOR MORE!
+        </span>
+
+        {/* Duck peeks out behind the flyer */}
+        <div className={styles.duckContainer}>
+          <img src="/assets/duck_locavore.png" alt="Duck" className={styles.duckImage} />
+        </div>
+
+        {/* Flyer sits in front of the duck */}
+        {/* I don't know what the error is, but it's working */}
+        <div
+          className={styles.flyerContainer}
+          onClick={() => setIsFlipped(!isFlipped)}
+        >
+          <div className={`${styles.flyerFlipper} ${isFlipped ? styles.isFlipped : ''}`}>
+            <div className={styles.flyerFront}>
+              <div className={styles.circularFlyer}>
+                <div className={styles.flyerHeadline}>SPAGHETTI<br />DUST</div>
+                <div className={styles.flyerSub}>WHAT'S NEW?</div>
+              </div>
+            </div>
+            <div className={styles.flyerBack}>
+              <div className={`${styles.circularFlyer} ${styles.circularFlyerBack}`}>
+                <div className={styles.flyerHeadline}>BACK SIDE<br />CONTENT</div>
+                <div className={styles.flyerSub}>FLIPPED!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );   
+}

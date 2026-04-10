@@ -1,0 +1,13 @@
+import styles from './Tagline.module.css';
+
+export default function Tagline() {
+  return (
+    <section className={styles.taglineSection}>
+      <p>
+        An emporium of local goods, all grown&nbsp;/ baked&nbsp;/ fabricated&nbsp;/
+        assembled&nbsp;/ crafted&nbsp;/ concocted&nbsp;/ sewn&nbsp;/ stuffed&nbsp;/
+        pickled within 100 miles of NYC.
+      </p>
+    </section>
+  );
+}
