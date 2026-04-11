@@ -11,13 +11,13 @@ npm start
 ```
 locavore_Demo_React/
 ├── public/
-│   └── index.html
-├── src/
-│   ├── assets/
+│   ├── index.html
+|   └── assets/
 │   │   ├── logo.svg
 │   │   ├── hero_logo.svg
 │   │   ├── store.png
 │   │   └── duck.png
+├── src/
 │   ├── fonts/
 │   │   ├── LT_rounded_bold.woff
 │   │   ├── LT_rounded_bold.woff2
