@@ -1,0 +1,35 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--green);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1.5px dashed var(--black);
+  font-family: 'ReceiptFont', 'LocavoreBody', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.link:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+}

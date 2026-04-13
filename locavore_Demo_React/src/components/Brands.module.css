@@ -1,0 +1,104 @@
+.brandsSection {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  border-bottom: 1.5px dashed var(--black);
+}
+
+.brandsHeading {
+  padding: 40px 24px;
+  display: flex;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.brandsHeading h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 44px);
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.brandsGrid {
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, auto);
+  grid-auto-flow: column;
+  column-gap: 40px;
+  row-gap: 0;
+}
+
+.alphaGroup {
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  break-inside: avoid;
+}
+
+.alphaGroup:last-child {
+  border-bottom: none;
+}
+
+.alphaLetter {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.brandNameItem {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  line-height: 1.6;
+  transition: opacity 0.12s;
+}
+
+.brandNameItem:hover {
+  opacity: 0.45;
+  text-decoration: underline;
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .brandsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brandsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .brandsHeading {
+    border-bottom: 1.5px solid var(--black);
+    padding: 24px 20px;
+    height: auto;
+    position: static;
+  }
+
+  .brandsHeading h2 {
+    font-size: clamp(32px, 10vw, 48px);
+  }
+
+  .brandsGrid {
+    padding: 20px;
+    display: block;
+    columns: 2;
+    column-gap: 16px;
+  }
+
+  .alphaGroup {
+    break-inside: avoid;
+    padding: 8px 0;
+  }
+
+  .alphaLetter { font-size: 14px; }
+  .brandNameItem { font-size: 11px; line-height: 1.65; }
+}
