@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zildjian | Demo Site | Cymbals, Drumsticks & Apparel</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&family=Poppins:ital,wght@0,300;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">Free Ground Shipping on Orders $100+ in US</div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left-group">
+        <button class="mobile-menu-btn" onclick="openMobileMenu()">
+          <svg viewBox="0 0 18 16"><path d="M1 .5h16M1 8h16M1 15.5h16"/></svg>
+        </button>
+        <button class="header-icon mobile-search-btn" onclick="toggleSearch()" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+      </div>
+      <a class="logo" href="#">
+        <img src="assets/zildjian_logo.png" alt="logo" class="logo-image">
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cymbals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">E-Kit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Headphones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sticks & Mallets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Apparel & Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <button class="header-icon desktop-search-btn" onclick="toggleSearch()" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="header-icon" onclick="openLocation()" aria-label="Location">
+          <svg viewBox="0 0 28 28" width="24" height="24"><path id="Ellipse" d="M24 13.25C24 14.131 23.5799 15.3507 22.75 16.8135C21.9426 18.2367 20.846 19.7209 19.7186 21.0853C18.596 22.4441 17.4692 23.6527 16.621 24.5231C16.4902 24.6574 16.3661 24.7834 16.25 24.9005C16.1339 24.7834 16.0098 24.6574 15.879 24.5231C15.0308 23.6527 13.904 22.4441 12.7814 21.0853C11.654 19.7209 10.5574 18.2367 9.74997 16.8135C8.92012 15.3507 8.5 14.131 8.5 13.25C8.5 8.96979 11.9698 5.5 16.25 5.5C20.5302 5.5 24 8.96979 24 13.25Z" stroke="white" stroke-width="3"></path></svg>
+        </button>
+        <button class="header-icon account" aria-label="Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="header-icon" onclick="openCart()" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input type="search" placeholder="Search cymbals, sticks, artists..." id="searchInput">
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo-m"><svg viewBox="0 0 200 50" width="120" height="30"><text x="0" y="38" font-family="Barlow Condensed" font-size="40" font-weight="900" fill="white">ZILDJIAN</text></svg></div>
+      <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+    </div>
+    <ul>
+      <li class="nav-item mobile-nav-item">
+        <div class="mobile-nav-link" onclick="toggleSub(this)"><span>Cymbals</span><svg viewBox="0 0 10 10"><path d="M1 3.5l4 4 4-4"/></svg></div>
+        <div class="mobile-sub"><a href="#">Hi-Hat</a><a href="#">Crash</a><a href="#">Ride</a><a href="#">K Family</a><a href="#">A Family</a><a href="#">Z Family</a></div>
+      </li>
+      <li class="mobile-nav-item">
+        <div class="mobile-nav-link" onclick="toggleSub(this)"><span>E-Kit</span><svg viewBox="0 0 10 10"><path d="M1 3.5l4 4 4-4"/></svg></div>
+        <div class="mobile-sub"><a href="#">ALCHEM-E Bronze EX</a><a href="#">ALCHEM-E Gold</a><a href="#">ALCHEM-E Gold EX</a></div>
+      </li>
+      <li class="mobile-nav-item">
+        <div class="mobile-nav-link" onclick="toggleSub(this)"><span>Sticks & Mallets</span><svg viewBox="0 0 10 10"><path d="M1 3.5l4 4 4-4"/></svg></div>
+        <div class="mobile-sub"><a href="#">Z Custom Sticks</a><a href="#">Hickory Series</a><a href="#">Artist Series</a><a href="#">Mallets</a></div>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#" style="display:block"><span>Apparel & Accessories</span></a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#" style="display:block"><span>Artists</span></a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#" style="display:block"><span>Education</span></a>
+      </li>
+      <li class="mobile-nav-item" style="padding:16px 20px">
+        <a href="#" class="btn" style="display:block;text-align:center">Log In / Account</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="hero">
+    <button class="hero-arrow prev" onclick="prevSlide()">&#8249;</button>
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide">
+        <div style="width:100%;height:70vh;background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 50%,#111 100%);display:flex;align-items:center;justify-content:flex-end;padding:60px">
+          <div style="text-align:right;max-width:500px">
+            <p style="color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:12px">A Family Cymbals</p>
+            <h1 style="color:white;font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5vw,72px);font-weight:900;text-transform:uppercase;line-height:1;margin-bottom:20px">Find Your<br>Sound</h1>
+            <p style="color:rgba(255,255,255,.7);font-size:15px;margin-bottom:28px">Classic sound, endless possibility. The A Family delivers the iconic tone that defined generations of music.</p>
+            <a href="#" class="btn btn-gold">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div style="width:100%;height:70vh;background:linear-gradient(135deg,#0d0d0d 0%,#1a1008 50%,#0d0d0d 100%);display:flex;align-items:center;padding:60px">
+          <div style="max-width:500px">
+            <p style="color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:12px">Young Drummer of the Year</p>
+            <h1 style="color:white;font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5vw,72px);font-weight:900;text-transform:uppercase;line-height:1;margin-bottom:20px">The Future<br>of Drumming</h1>
+            <p style="color:rgba(255,255,255,.7);font-size:15px;margin-bottom:28px">Celebrating the next generation of world-class drummers. Enter now for your chance to be recognized.</p>
+            <a href="#" class="btn" style="background:white;color:black;border-color:white">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div style="width:100%;height:70vh;background:linear-gradient(135deg,#111 0%,#1c1010 50%,#111 100%);display:flex;align-items:center;justify-content:center;padding:60px">
+          <div style="text-align:center;max-width:600px">
+            <p style="color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:12px">Exclusive Series</p>
+            <h1 style="color:white;font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5vw,72px);font-weight:900;text-transform:uppercase;line-height:1;margin-bottom:20px">Foundry<br>Sessions</h1>
+            <p style="color:rgba(255,255,255,.7);font-size:15px;margin-bottom:28px">Behind-the-scenes access to the Zildjian factory. Watch world-class cymbals come to life.</p>
+            <a href="#" class="btn btn-gold">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="hero-arrow next" onclick="nextSlide()">&#8250;</button>
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" onclick="goToSlide(0)"></button>
+      <button class="hero-dot" onclick="goToSlide(1)"></button>
+      <button class="hero-dot" onclick="goToSlide(2)"></button>
+    </div>
+  </section>
+
+  <!-- PROMO BLOCKS -->
+  <section style="max-width:1600px;margin:30px auto;padding:0 40px">
+    <div class="promo-grid">
+
+      <div>
+        <div class="promo-large" onclick="location.href='#'">
+          <img src="assets/A-Family-Promo-Block-.png" alt="A-Family-Promo-Block-">
+            <span class="promo-badge">Shop Now</span> 
+        </div>
+        <div class="promo-text">
+          <h3 class="promo-title">A Family - Classic Sound, Endless Possibility</h3>
+          <a href="#" class="promo-link">Shop Now →</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="promo-stack">
+          <div>
+            <div class="promo-small" onclick="location.href='#'">
+              <img src="assets/Z-Custom-Promotion-Collections-Banner_mobile.png" alt="Z-Custom-Promotion-Collections-Banner_mobile">
+                <span class="promo-badge">Shop Now</span>
+            </div>
+            <div class="promo-text">
+              <h3 class="promo-title">Z Custom - Made for Metal</h3>
+              <a href="#" class="promo-link">Shop Now →</a>
+            </div>
+          </div>
+          <div>
+            <div class="promo-small" onclick="location.href='#'">
+              <img src="assets/Zildjian-ALCHEM-E-Perfect-Tune-Headphones-Promo-Block-2.png" alt="Zildjian-ALCHEM-E-Perfect-Tune-Headphones-Promo-Block-2">
+                <span class="promo-badge">Shop Now</span>
+            </div>
+            <div class="promo-text">
+              <h3 class="promo-title">Zildjian ALCHEM-E Perfect Tune Headphones</h3>
+              <a href="#" class="promo-link">Shop Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="best-sellers">
+    <div class="best-sellers-header">
+      <h2 class="section-title" style="margin-bottom:0;text-align:left">Best Sellers</h2>
+    </div>
+    
+    <div class="bs-carousel-wrap">
+      <button class="slider-btn" id="bsPrev" onclick="bsScroll(-1)" aria-label="Previous">
+          <svg viewBox="0 0 14 14"><path d="M9 1 3 7l6 6"/></svg>
+        </button>
+      
+      <div class="bs-carousel" id="bsCarousel">
+
+        <!-- Card 1 -->
+        <div class="product-card" onclick="addToCart('K Sweet Crashes')">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#f5f5f0,#e8e4d8)">
+              <svg width="110" height="110" viewBox="0 0 19 12" fill="none" style="opacity:.4"><ellipse cx="9.5" cy="8" rx="9" ry="3.5" stroke="#666" stroke-width="1.2"/><ellipse cx="9.5" cy="4" rx="9" ry="3.5" stroke="#666" stroke-width="1.2"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">K Family</div>
+          <div class="product-name">K Sweet Crashes</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">21 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" onclick="addToCart('Zildjian ALCHEM-E Headphones')">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#f0ede4,#ddd9ca)">
+              <svg width="90" height="90" viewBox="0 0 24 24" fill="none" style="opacity:.35;stroke:#555;stroke-width:1.3"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">ALCHEM-E</div>
+          <div class="product-name">Zildjian ALCHEM-E Perfect Tune Headphones</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">27 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" onclick="addToCart('A Zildjian New Beat HiHats')">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#ede8dc,#d4cfbf)">
+              <svg width="110" height="110" viewBox="0 0 19 12" fill="none" style="opacity:.4"><ellipse cx="9.5" cy="6" rx="9" ry="3" stroke="#666" stroke-width="1.2"/><ellipse cx="9.5" cy="3" rx="9" ry="3" stroke="#666" stroke-width="1.2"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">A Family</div>
+          <div class="product-name">A Zildjian New Beat HiHats</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">8 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" onclick="addToCart('Zildjian Classic Logo Tee')">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#e8e8e8,#d0d0d0)">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" style="opacity:.4;stroke:#555;stroke-width:1.5"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.23z"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">Apparel</div>
+          <div class="product-name">Zildjian Classic Logo Tee</div>
+          <div class="product-stars">
+            <span class="stars">★★★★½</span>
+            <span class="review-count">107 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card" style="position:relative" onclick="addToCart('Drumstick Custom Bundle')">
+          <span class="product-badge-pill">NEW</span>
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#f0ece0,#e0d8c0)">
+              <div style="display:flex;gap:5px;opacity:.5">
+                <div style="width:9px;height:80px;background:#8a6a30;border-radius:4px 4px 2px 2px;transform:rotate(-4deg)"></div>
+                <div style="width:9px;height:80px;background:#a07a38;border-radius:4px 4px 2px 2px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-vendor">Limited Edition</div>
+          <div class="product-name">Drumstick Custom Bundle</div>
+          <div class="product-stars">
+            <span class="stars" style="color:#ccc">★★★</span><span class="stars" style="color:var(--gold)"></span>
+            <span class="review-count">44 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card" onclick="addToCart('K Paper Thin Crashes')">
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#f2ede0,#dfd7c0)">
+              <svg width="120" height="80" viewBox="0 0 19 12" fill="none" style="opacity:.4"><ellipse cx="9.5" cy="6" rx="9" ry="3.5" stroke="#666" stroke-width="1.2"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">K Family</div>
+          <div class="product-name">K Paper Thin Crashes</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">14 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card" style="position:relative" onclick="addToCart('FX Stacks')">
+          <span class="product-badge-pill">NEW</span>
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#f8f4ec,#ede6d0)">
+              <div style="position:relative;width:90px;height:90px;opacity:.45">
+                <div style="position:absolute;inset:0;border-radius:50%;border:3px solid #888"></div>
+                <div style="position:absolute;top:9px;left:9px;right:9px;bottom:9px;border-radius:50%;border:2px solid #aaa"></div>
+                <div style="position:absolute;top:20px;left:20px;right:20px;bottom:20px;border-radius:50%;border:1.5px solid #bbb"></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-vendor">FX Family</div>
+          <div class="product-name">FX Stacks</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">6 Reviews</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card" style="position:relative" onclick="addToCart('K Projection Ride')">
+          <span class="product-badge-pill">NEW</span>
+          <div class="product-img">
+            <div class="product-img-bg" style="background:linear-gradient(135deg,#e8dfc8,#d4c9a8)">
+              <svg width="110" height="110" viewBox="0 0 19 12" fill="none" style="opacity:.4"><ellipse cx="9.5" cy="7" rx="9" ry="4" stroke="#666" stroke-width="1.2"/><circle cx="9.5" cy="4" r="2" stroke="#666" stroke-width="1.2"/></svg>
+            </div>
+          </div>
+          <div class="product-vendor">K Family</div>
+          <div class="product-name">21" K Zildjian Projection Ride</div>
+          <div class="product-stars">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">19 Reviews</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-nav">
+        <button class="slider-btn" id="bsNext" onclick="bsScroll(1)" aria-label="Next">
+          <svg viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP BY CATEGORY -->
+  <section class="categories">
+    <h2 class="section-title">Shop By Category</h2>
+    <div class="cat-grid">
+      <div class="cat-item" onclick="location.href='#'">
+        <div class="cat-img">
+          <img src="assets/Cymbals-4.png" alt="cymbals">
+        </div>
+        <div class="cat-label">Cymbals <svg viewBox="0 0 16 8" fill="none"><path d="M1 4h13M10 1l4 3-4 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="cat-item" onclick="location.href='#'">
+        <div class="cat-img">
+          <img src="assets/Sticks-_-Mallets.png" alt="sticks&mallets">
+        </div>
+        <div class="cat-label" style="color:var(--black)">Sticks & Mallets <svg viewBox="0 0 16 8" fill="none"><path d="M1 4h13M10 1l4 3-4 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="cat-item" onclick="location.href='#'">
+        <div class="cat-img">
+          <img src="assets/Apparel-_-More.png" alt="Apparel">
+        </div>
+        <div class="cat-label">Apparel & Gifts <svg viewBox="0 0 16 8" fill="none"><path d="M1 4h13M10 1l4 3-4 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="cat-item" onclick="location.href='#'">
+        <div class="cat-img">
+          <img src="assets/Accesories-Catagory-Banner.png" alt="Accesories-Catagory-Banner">
+        </div>
+        <div class="cat-label">Drummer Accessories <svg viewBox="0 0 16 8" fill="none"><path d="M1 4h13M10 1l4 3-4 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISTS -->
+  <section class="artists-section">
+    
+    <div class="artists-inner">
+      <div class="artists-bg">
+        <img src="assets/Artist-Block-Image.png" alt="" class="artist-img-back">
+        <img src="assets/artist_2.png" alt="" class="artist-img-front">
+      </div>
+
+      <div class="artists-content">
+        <img src="assets/artist_2.png" alt="" class="artist-img-front-mobile">
+        <div class="artists-header">
+          <div>
+            <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(32px,3vw,52px);font-weight:900;text-transform:uppercase;line-height:1;margin-top:8px">Explore<br>Our Artists</h2>
+            <div class="artists-subtitle">Explore Sound Through Our Family Of Artists</div>
+          </div>
+          <a href="#" class="btn-artists artists-btn-desktop">Browse All Artists</a>
+        </div>
+        <div class="artists-grid-wrap">
+          <button class="slider-btn" id="artistPrev" onclick="artistScroll(-1)" aria-label="Previous">
+              <svg viewBox="0 0 14 14"><path d="M9 1 3 7l6 6"/></svg>
+          </button>
+          <div class="artists-grid" id="artistCarousel">
+          <div class="artist-card" onclick="location.href='#'">
+            <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="opacity:.5;stroke:var(--gold);stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
+            <div class="artist-name">Craig Reynolds</div>
+            <div class="artist-band">Stray From The Path</div>
+          </div>
+          <div class="artist-card" onclick="location.href='#'">
+            <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#111,#222);display:flex;align-items:center;justify-content:center">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="opacity:.5;stroke:var(--gold);stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
+            <div class="artist-name">Roni Kaspi</div>
+            <div class="artist-band">Avishai Cohen Trio</div>
+          </div>
+          <div class="artist-card" onclick="location.href='#'">
+            <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="opacity:.5;stroke:var(--gold);stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
+            <div class="artist-name">Russell Holzman</div>
+            <div class="artist-band">Caroline Polachek</div>
+          </div>
+          <div class="artist-card" onclick="location.href='#'">
+            <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#111,#222);display:flex;align-items:center;justify-content:center">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" style="opacity:.5;stroke:var(--gold);stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            </div>
+            <div class="artist-name">Deven Trusclair</div>
+            <div class="artist-band">Dumpstaphunk</div>
+          </div>
+          </div>
+          <div class="artist-slider-nav">
+            <button class="slider-btn" id="artistNext" onclick="artistScroll(1)" aria-label="Next">
+              <svg viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="artists-btn-mobile-wrap">
+          <a href="#" class="btn-artists artists-btn-mobile">Browse All Artists</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM / UGC -->
+  <section class="instagram">
+    <h2 class="section-title">#PLAY<span class="section-title-gold">ZILDJIAN</span></h2>
+    <p class="instagram-sub">Tag your pics and videos with @zildjiancompany and #PlayZildjian and show us how you express yourself with Zildjian.</p>
+    <div class="ig-grid">
+      <div class="ig-placeholder" style="background:linear-gradient(135deg,#1a1a1a,#2a2a2a)"><span style="color:var(--gold);font-size:36px">♪</span></div>
+      <div class="ig-placeholder" style="background:linear-gradient(135deg,#e8e0cc,#c8bfa0)"><span style="opacity:.3;font-size:36px">🥁</span></div>
+      <div class="ig-placeholder" style="background:linear-gradient(135deg,#111,#1a1a2e)"><span style="color:var(--gold);font-size:36px">♫</span></div>
+      <div class="ig-placeholder" style="background:linear-gradient(135deg,#2a1a1a,#1a1a1a)"><span style="color:var(--gold);font-size:36px">🎵</span></div>
+      <div class="ig-placeholder" style="background:linear-gradient(135deg,#e8dfc8,#d4c9a8)"><span style="opacity:.3;font-size:36px">🥁</span></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <img src="assets/zd-club_1.png" alt="zd-club_1">
+      <p>Get exclusive access to Zildjian content, inside info on new products, news, your favorite Zildjian artists, and more.</p>
+      <div class="newsletter-button">
+        <button onclick="subscribeNewsletter()" class="subscribe-button">Join Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>About</h3>
+        <a href="#">The Avedis Zildjian Company</a>
+        <a href="#">The Zildjian Brand Journey</a>
+        <a href="#">Career Opportunities</a>
+        <a href="#">Zildjian Newsroom</a>
+        <a href="#">Dealer and Distributor Locator</a>
+        <a href="#">400th Anniversary Concert</a>
+        <a href="#">Young Drummer of the Year</a>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Warranty</a>
+        <a href="#">Shipping and Returns</a>
+        <a href="#">Return Authorization</a>
+        <a href="#">Cymbal Product Registration</a>
+        <a href="#">E-Kit Support</a>
+        <a href="#">E-Kit Software Downloads</a>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="var(--black)" d="M12 6a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="var(--black)" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+        <div style="margin-top:24px">
+          <h3>Avedis Zildjian Co.</h3>
+          <div class="footer-logos">
+            <img src="assets/vicfirth-logo-2x_1.png" alt="logo" class="footer-logo">
+            <img src="assets/zildjian_logo.png" alt="logo" class="footer-logo">
+            <img src="assets/Balter-Mallet.png" alt="logo" class="footer-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 All Rights Reserved. Avedis Zildjian Co.</span>
+      <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <br class="footer-break">
+        <a href="#">Privacy Policy</a>
+        <br class="footer-break">
+        <a href="#">Do Not Sell Or Share My Info</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your Bag</h2>
+      <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-empty" id="cartEmpty">
+      <p>Your cart is empty</p>
+      <a href="#" class="btn" onclick="closeCart()">Continue Shopping</a>
+    </div>
+    <div id="cartItems" style="padding:16px 24px;display:none"></div>
+    <div id="cartFooter" style="display:none;padding:16px 24px;border-top:1px solid var(--gray-mid)">
+      <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-weight:700">
+        <span>Subtotal</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <a href="#" class="btn" style="display:block;text-align:center;margin-bottom:10px">Checkout</a>
+      <a href="#" class="btn" style="display:block;text-align:center;background:transparent;color:var(--black)" onclick="closeCart()">View Cart</a>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Added to cart!</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
