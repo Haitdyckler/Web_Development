@@ -1,0 +1,83 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+}
+
+.bgImg { position: absolute; inset: 0; z-index: 0; }
+.bgImg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.card {
+  position: absolute;
+  top: 50%; left: 40px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #E8642A;
+  color: var(--cream);
+  border-radius: 12px;
+  padding: 48px 36px;
+  max-width: 450px;
+  height: 600px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--black);
+  justify-content: space-between;
+}
+
+.card h2 {
+  font-family: var(--serif);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+  color: var(--cream);
+  max-width: 240px;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card p {
+  font-family: var(--sans-serif);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--cream);
+  max-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--cream);
+  color: var(--black);
+  font-family: var(--sans-serif);
+  font-size: 0.9rem;
+  padding: 12px 70px;
+  border-radius: 30px;
+  border: 1px solid var(--black);
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover { background: var(--blue); color: var(--cream); }
+
+@media (max-width: 768px) {
+  .section { height: auto; position: static; display: flex; flex-direction: column; }
+  .bgImg { position: static; width: 100%; height: 300px; }
+  .bgImg img { width: 100%; height: 100%; object-fit: cover; }
+  .card {
+    position: static; transform: none;
+    width: 100%; max-width: 100%; height: auto;
+    border-radius: 0; border: none;
+    padding: 48px 20px;
+    align-items: center; text-align: center;
+    gap: 30px;
+  }
+  .card h2 { font-size: 44px; max-width: 100%; text-align: center; }
+  .card p { text-align: center; max-width: 100%; }
+  .btn { width: 100%; text-align: center; padding: 14px 20px; align-self: center; }
+}

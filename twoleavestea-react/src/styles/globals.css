@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'Reckless';
+  src: url('https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RecklessCondensedS-TRIAL-Book.woff?v=1768655865') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Midnight';
+  src: url('https://cdn.shopify.com/s/files/1/0297/8132/7932/files/midnight-sans-rd-12-medium-trial.otf?v=1768200246') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Midnight';
+  src: url('https://cdn.shopify.com/s/files/1/0297/8132/7932/files/midnight-sans-rd-12-semibold-trial.otf?v=1768200246') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RobotoMono-Regular.ttf?v=1768204557') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RobotoMono-Medium.ttf?v=1768204557') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 400;
+  font-style: normal;
+  src: url("//twoleavestea.com/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2") format("woff2"),
+       url("//twoleavestea.com/cdn/fonts/figtree/figtree_n4.c0575d1db21fc3821f17fd6617d3dee552312137.woff") format("woff");
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream:       #F5F0E8;
+  --dark-green:  #2C4A2E;
+  --mid-green:   #4A7C59;
+  --light-green: #8BB596;
+  --sl-green:    #d0ead3;
+  --gold:        #C8A96E;
+  --off-white:   #ffffff;
+  --blue:        #2a2857;
+  --lightblue:   #daeaff;
+  --mid-blue:    #A2C9FC;
+  --charcoal:    #2A2A2A;
+  --muted:       #7A7060;
+  --black:       #000000;
+  --very-gray:   #2a2a2a;
+  --gray-text:   #3e3e3e;
+  --serif:       'Reckless', Georgia, serif;
+  --sans:        'Midnight', arial;
+  --mono:        'Roboto Mono', monospace;
+  --sans-serif:  'Figtree', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  color: var(--charcoal);
+  background: var(--cream);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { font-family: var(--sans); cursor: pointer; }
+
+::-webkit-scrollbar { width: 1px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--blue); }
+* { scrollbar-width: thin; scrollbar-color: var(--blue) transparent; }
+
+/* ── Section title badge ── */
+.section-title {
+  padding: 0rem 0.1rem;
+  border-radius: 8px;
+  border: 2px solid black;
+  transform: rotate(-2deg);
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: var(--sans);
+}
+
+.logo_img { max-width: 120px; }
+
+/* ── Shared animation keyframes ── */
+@keyframes dropFromTop {
+  from { opacity: 0; transform: translateY(-100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroZoomOut {
+  from { transform: scale(1.13); opacity: 0.6; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wordFadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Animation utility classes ── */
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-fade-down {
+  opacity: 0;
+  animation: fadeDown 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  animation: wordFadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Slider buttons ── */
+.slider-btn {
+  background: var(--cream);
+  border: 1.5px solid var(--black);
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.slider-btn:hover { color: var(--cream); background-color: var(--blue); }
+.slider-btn:disabled { opacity: .3; cursor: default; }
+.slider-btn svg {
+  width: 14px; height: 14px;
+  fill: none; stroke: currentColor; stroke-width: 2.5;
+}

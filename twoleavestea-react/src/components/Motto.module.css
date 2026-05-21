@@ -1,0 +1,36 @@
+.motto {
+  background-color: var(--cream);
+  border-top: 2px solid var(--black);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 100px auto;
+}
+
+.grid {
+  margin: 100px auto;
+  max-width: 750px;
+  padding: 0 24px;
+}
+
+.contextText h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: var(--serif);
+  line-height: 1.25;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.contextText h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .motto { padding: 60px 20px; }
+  .grid { margin: 50px auto; max-width: 230px; }
+  .contextText h2 { font-size: 2rem; line-height: 1.3; }
+}

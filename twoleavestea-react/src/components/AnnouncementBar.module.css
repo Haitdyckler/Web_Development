@@ -1,0 +1,13 @@
+.bar {
+  background: var(--blue);
+  text-align: center;
+  padding: 3px;
+  font-family: var(--mono);
+  color: var(--off-white);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  animation: dropFromTop 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.05s;
+  opacity: 0;
+}

@@ -1,0 +1,97 @@
+.section {
+  padding: 150px 60px;
+  border-top: 2px solid var(--black);
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  max-width: 850px;
+  margin-right: 12em;
+  margin-bottom: 50px;
+}
+
+.title {
+  display: inline-block;
+  background-color: #E8642A;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.contextText h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: var(--serif);
+  line-height: 1.25;
+}
+
+.searchBlock {
+  margin-top: 10px;
+  max-width: 1100px;
+  margin-left: 50px;
+}
+
+.searchWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input {
+  width: 420px;
+  padding: 16px 20px;
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--charcoal);
+  background: transparent;
+  border: 1.5px solid var(--black);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input::placeholder { color: #aaa; }
+.input:focus { border-color: var(--charcoal); }
+
+.vibeLabel {
+  font-family: var(--sans-serif);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  margin-bottom: 14px;
+  margin-top: 80px;
+}
+
+.vibeTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vibeTag {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--charcoal);
+  background: var(--lightblue);
+  border: 1.5px solid var(--black);
+  border-radius: 12px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.vibeTag:hover,
+.vibeTag.active { background: var(--mid-blue); border-color: var(--charcoal); }
+
+@media (max-width: 768px) {
+  .section { padding: 80px 20px; }
+  .header { margin-right: 0; margin-bottom: 30px; max-width: 400px; }
+  .contextText h2 { font-size: 2.1rem; max-width: 400px; }
+  .searchBlock { margin-left: 0; max-width: 100%; }
+  .input { width: 100%; font-size: 22px; }
+  .vibeLabel { margin-top: 30px; }
+}
