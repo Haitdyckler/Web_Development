@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Leaves and a Bud — Organic Whole Leaf Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+  </head>
+  <body>
+    <div class="announcement-bar">Free US shipping for orders over $75</div>
+    <!-- ─── SITE ─── -->
+    <div id="site">
+
+      <!-- ─── DYNAMIC ISLAND NAV ─── -->
+      <div id="nav-wrapper">
+        <nav id="nav">
+
+          <!-- LEFT: Shop · Learn · Reviews -->
+          <div class="nav-left">
+            <!-- Hamburger (mobile only) -->
+            <button id="mobile-menu-btn" aria-label="Open menu">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="19" y2="6"/>
+                <line x1="3" y1="11" x2="19" y2="11"/>
+                <line x1="3" y1="16" x2="19" y2="16"/>
+              </svg>
+            </button>
+            <!-- Shop -->
+            <div class="nav-dropdown-wrap">
+              <button class="nav-link">
+                Shop
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <div class="nav-dropdown nav-dropdown--shop">
+                <div class="shop-dropdown-cols">
+                  <div class="shop-dropdown-col">
+                    <div class="shop-dropdown-col-heading">Tea Varieties</div>
+                    <a href="#">Whole Leaf Tea Sachets</a>
+                    <a href="#">Pure Matcha</a>
+                    <a href="#">Tea Lattes</a>
+                    <a href="#">Iced Tea</a>
+                  </div>
+                  <div class="shop-dropdown-col">
+                    <div class="shop-dropdown-col-heading">Collections</div>
+                    <a href="#">Matcha</a>
+                    <a href="#">Chai</a>
+                    <a href="#">Organic Tea</a>
+                    <a href="#">Naked Tea Sachets</a>
+                    <a href="#">Black Tea</a>
+                    <a href="#">Green Tea</a>
+                    <a href="#">Herbal Tea</a>
+                    <a href="#">Caffeine-Free</a>
+                    <a href="#">Gifts &amp; Samplers</a>
+                  </div>
+                  <div class="shop-dropdown-bestsellers">
+                    <div class="shop-dropdown-col-heading">Shop Best Sellers</div>
+                    <div class="shop-dropdown-products">
+                      <a href="#" class="shop-dropdown-product">
+                        <div class="shop-product-img" style="background:#c8e6a0;"></div>
+                        <span>Ceremonial Matcha - 1 oz Tin</span>
+                      </a>
+                      <a href="#" class="shop-dropdown-product">
+                        <div class="shop-product-img" style="background:#f5c98a;"></div>
+                        <span>Nice Chai Tea Latte Mix</span>
+                      </a>
+                      <a href="#" class="shop-dropdown-product">
+                        <div class="shop-product-img" style="background:#aad4f5;"></div>
+                        <span>Organic Earl Grey Tea</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop-dropdown-footer">
+                  <a href="#" class="shop-all-btn">Shop All Teas</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Learn -->
+            <div class="nav-dropdown-wrap">
+              <button class="nav-link">
+                Learn
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <div class="nav-dropdown nav-dropdown--learn">
+                <div class="learn-dropdown-products">
+                  <a href="#" class="learn-dropdown-card">
+                    <div class="learn-product-img" style="background:#aad4f5;">
+                      <img src="YOUR_RAFTING_IMAGE" alt="Our Story" />
+                    </div>
+                    <span>Our Story</span>
+                  </a>
+                  <a href="#" class="learn-dropdown-card">
+                    <div class="learn-product-img" style="background:#c8e6a0;">
+                      <img src="YOUR_MOUNTAINS_IMAGE" alt="Our Spirit" />
+                    </div>
+                    <span>Our Spirit</span>
+                  </a>
+                  <a href="#" class="learn-dropdown-card">
+                    <div class="learn-product-img" style="background:#1a2a5e;">
+                      <img src="YOUR_CAFE_IMAGE" alt="For Cafes and Partners" />
+                    </div>
+                    <span>For Cafes and Partners</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-link">Reviews</button>
+          </div>
+
+          <!-- CENTER: Logo -->
+          <a href="#" class="nav-logo">
+            <img src="assets/two_leaves_logo.png" alt="two_leaves_logo" class="logo_img">
+          </a>
+
+          <!-- RIGHT: My Account · Cafe & Wholesale · Tea Journal · Cart -->
+          <div class="nav-right">
+            <button class="nav-link">My Account</button>
+            <button class="nav-link">Cafe &amp; Wholesale Partners</button>
+            <button class="nav-link">Tea Journal</button>
+            <div class="nav-divider"></div>
+            <!-- Cart -->
+            <button class="nav-icon-btn" aria-label="Cart">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span class="nav-cart-badge">0</span>
+            </button>
+          </div>
+
+        </nav>
+      </div>
+      <div class="main-content">
+          <!-- ─── HERO ─── -->
+        <section id="hero">
+          <div class="hero-content">
+            <h1 class="hero-h1">A cup that fits<br>the moment.</h1>
+            <p class="hero-body">
+              From compostable whole leaf tea sachets and iced tea to
+              tea lattes and matcha, we've got something for everyone.
+            </p>
+            <a href="#" class="btn-shop">Shop Now</a>
+          </div>
+        </section>
+
+        <!-- ─── MOTTO SECTION ─── -->
+        <section class="more-content-text" id="motto">
+          <div class="grid-container">
+            <div class="context-text">
+              <h2>A <i>great</i> cup starts with a careful pluck - the top two leaves and a bud.</h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── BEST SELLERS SECTION ─── -->
+        <section class="best-sellers">
+          <div class="best-sellers-header">
+            <span class="section-title best-seller-title">BEST SELLERS</span>
+          </div>
+
+          <div class="bs-carousel-wrap">
+
+            <!-- Prev button — outside the clip, overlays the left edge -->
+            <button class="slider-btn" id="bsPrev" onclick="bsScroll(-2)" aria-label="Previous">
+              <svg viewBox="0 0 14 14"><path d="M9 1 3 7l6 6"/></svg>
+            </button>
+
+            <div class="bs-carousel-clip">
+              <div class="bs-carousel">
+
+                <!-- Card 1 – Green -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#b5d98a;">
+                    <span class="product-badge-pill">Tea Sachets</span>
+                    <div class="product-stars"><span class="stars">★ 4.71 (84)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="110" height="110" viewBox="0 0 19 12" fill="none" style="opacity:.4"><ellipse cx="9.5" cy="8" rx="9" ry="3.5" stroke="#3a5c10" stroke-width="1.2"/><ellipse cx="9.5" cy="4" rx="9" ry="3.5" stroke="#3a5c10" stroke-width="1.2"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Organic Tropical Green Tea')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Organic Tropical Green Tea</p>
+                      <span class="product-price">From $11.95</span>
+                      <p class="product-description">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 2 – Yellow -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#f5c842;">
+                    <span class="product-badge-pill">Gifts &amp; Samplers</span>
+                    <div class="product-stars"><span class="stars">★ 5 (2)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" style="opacity:.4;stroke:#8a5c00;stroke-width:1.3"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M16 8V6a4 4 0 0 0-8 0v2"/><line x1="12" y1="13" x2="12" y2="16"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Herbal Tea Trio')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Herbal Tea Trio</p>
+                      <span class="product-price">$33.30</span>
+                      <p class="product-description">A trio of soothing herbal teas, perfect for gifting.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 3 – Teal -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#72c9b8;">
+                    <span class="product-badge-pill">Naked Sachets</span>
+                    <div class="product-stars"><span class="stars">★ 5 (11)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="70" height="90" viewBox="0 0 24 30" fill="none" style="opacity:.4;stroke:#1a5c50;stroke-width:1.3"><rect x="3" y="2" width="18" height="26" rx="4"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Organic Peppermint – 50 Naked Sachets')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Organic Peppermint – 50 Naked Sachets</p>
+                      <span class="product-price">$21.95</span>
+                      <p class="product-description">Our organic peppermint tea is made from pure whole leaf peppermint.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 4 – Light Blue -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#aad4f5;">
+                    <span class="product-badge-pill">Gifts &amp; Samplers</span>
+                    <div class="product-stars"><span class="stars">★ 4.85 (41)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="90" height="70" viewBox="0 0 24 20" fill="none" style="opacity:.4;stroke:#1a3c5c;stroke-width:1.2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M7 6V4a5 5 0 0 1 10 0v2"/><line x1="8" y1="11" x2="16" y2="11"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Classic Bamboo Tea Chest')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Classic Bamboo Tea Chest</p>
+                      <span class="product-price">$42.95</span>
+                      <p class="product-description">This 6-slot bamboo box offers a sampling of eight sachets each of six of our best selling teas.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 5 – Light Green -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#c8e6a0;">
+                    <span class="product-badge-pill">Latte Mix</span>
+                    <div class="product-stars"><span class="stars">★ 4.9 (22)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="80" height="90" viewBox="0 0 20 24" fill="none" style="opacity:.4;stroke:#2a5c1a;stroke-width:1.2"><rect x="3" y="2" width="14" height="20" rx="3"/><line x1="7" y1="8" x2="13" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Nice Matcha')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Nice Matcha</p>
+                      <span class="product-price">From $12.95</span>
+                      <p class="product-description">Our Nice Matcha is a powdered mix made simply from organic Japanese matcha.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 6 – Warm Orange -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#f5a86e;">
+                    <span class="product-badge-pill">Black Tea</span>
+                    <div class="product-stars"><span class="stars">★ 4.8 (56)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" style="opacity:.4;stroke:#7a3010;stroke-width:1.2"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Earl Grey Supreme</p>
+                      <span class="product-price">From $10.95</span>
+                      <p class="product-description">Bold Ceylon black tea layered with authentic bergamot oil. A timeless ritual.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 7 – Soft Rose -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#f5b8c8;">
+                    <span class="product-badge-pill">Herbal</span>
+                    <div class="product-stars"><span class="stars">★ 4.95 (33)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" style="opacity:.4;stroke:#8a1040;stroke-width:1.2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Chamomile Dreams')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Chamomile Dreams</p>
+                      <span class="product-price">$10.95</span>
+                      <p class="product-description">Whole chamomile blossoms hand-selected for maximum calm and floral sweetness.</p>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 8 – Deep Berry -->
+                <div class="product-card">
+                  <div class="product-card-media" style="background:#c9a0dc;">
+                    <span class="product-badge-pill">Herbal Blend</span>
+                    <div class="product-stars"><span class="stars">★ 4.7 (19)</span></div>
+                    <div class="product-img">
+                      <div class="product-img-bg" style="background:transparent">
+                        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" style="opacity:.4;stroke:#4a1060;stroke-width:1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                    </div>
+                    <button class="product-btn" onclick="addToCart('Crimson Berry')" aria-label="Add to Cart"><span>+</span><p>Add</p></button>
+                  </div>
+                  <div class="product-info">
+                    <a href="#">
+                      <p class="product-name">Crimson Berry</p>
+                      <span class="product-price">$11.95</span>
+                      <p class="product-description">Hibiscus, rosehip and elderberry in a deep ruby infusion. Sip cold or hot.</p>
+                    </a>
+                  </div>
+                </div>
+
+              </div><!-- /.bs-carousel -->
+            </div>
+
+            <!-- Next button — also inside the wrap -->
+            <div class="slider-nav">
+              <button class="slider-btn" id="bsNext" onclick="bsScroll(2)" aria-label="Next">
+                <svg viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"/></svg>
+              </button>
+            </div>
+
+          </div><!-- /.bs-carousel-wrap -->
+
+          <div class="more-sellers-content">
+            <a href="" class="more-product-button">Explore All Teas</a>
+          </div>
+        </section>
+
+        <!-- ─── DISCOVER SECTION ─── -->
+        <section id="discover">
+          <div class="discover-section-header">
+            <span class="section-title discover-title">Discover</span>
+            <div class="context-text">
+              <h2>Let's find a cup that fits the <i>moment</i>. What are you searching for?</h2>
+            </div>
+          </div>
+          <div class="discover-search-block">
+            <div class="search-block-wrapper">
+              <input id="discover-input" type="text" placeholder="iced tea" />
+              <div>
+                <p class="vibe-label">Or explore by vibe...</p>
+                <!-- ─── PLACEHOLDER FOR TAGS ─── -->
+                <div class="vibe-tags">
+                  <button class="vibe-tag">A Sweet Treat</button>
+                  <button class="vibe-tag">Evening Unwind</button>
+                  <button class="vibe-tag">Focused &amp; Clear</button>
+                  <button class="vibe-tag">Caffeine!</button>
+                  <button class="vibe-tag">Caffeine-Free</button>
+                  <button class="vibe-tag">Ceremony-Worthy</button>
+                  <button class="vibe-tag">Whole Leaf</button>
+                  <button class="vibe-tag">Over Ice</button>
+                  <button class="vibe-tag">Lattes</button>
+                  <button class="vibe-tag">Black Tea</button>
+                  <button class="vibe-tag">Green Tea</button>
+                  <button class="vibe-tag">Herbal Tea</button>
+                  <button class="vibe-tag">Organic</button>
+                  <button class="vibe-tag">Barista Favorite</button>
+                  <button class="vibe-tag">Calm &amp; Cozy</button>
+                  <button class="vibe-tag">Fruit Forward</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── OUR ORIGINS SECTION ─── -->
+        <section id="our-origin">
+          <div class="origin-section-header">
+            <span class="section-title origin-title">Our Origin</span>
+          </div>
+          <div class="origin-center-text">
+            <h1>BORN IN COLORADO</h1>
+          </div>
+          <div class="origin-text">
+            <p>Our founder Richard, started Two Leaves and a Bud in pursuit of a truly great cup. Two decades later, that same care and curiosity guide everything we make.</p>
+          </div>
+          <div class="origin-bottom">
+            <a href="" class="origin-btn">Our Story</a>
+          </div>
+        </section>
+
+        <!-- ─── REVIEWS SECTION ─── -->
+        <section id="reviews">
+          <div class="reviews-section-header">
+            <span class="section-title reviews-title">Reviews</span>
+            <div class="context-text">
+              <h2>Loved by tea people <i>everywhere</i>. Here's what they're saying.</h2>
+            </div>
+          </div>
+          <div class="teas-grid" id="teasGrid">
+            <!-- Cards injected by JS -->
+          </div>
+        </section>
+
+        <!-- ─── CAFE & WHOLESALE PARTNERS SECTION ─── -->
+        <section id="cafe-wholesale-partners">
+          <div class="partners-inner">
+            <div class="partners-image">
+              <img src="assets/Our_Cafe_Wholesale_Partners.png" alt="Barista holding a matcha latte" />
+            </div>
+            <div class="partners-content">
+              <h2 class="partners-h2">Our Cafe &amp; Wholesale Partners</h2>
+              <p class="partners-sub" style="transition-delay:0.15s">
+                From local cafés to national chains, our teas power thousands of baristas every day.
+              </p>
+              <a href="" class="partner-btn">Learn More</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── OUR LATTES SECTION ─── -->
+        <section id="our-lattes">
+          <div class="lattes-section-header">
+            <span class="section-title lattes-title">Our Lattes</span>
+            <div class="lattes-text">
+              <h2>Barista blends for every mood</h2>
+              <p class="lattes-sub">(No training required)</p>
+            </div>
+          </div>
+
+          <div class="latte-carousel">
+            <button class="carousel-arrow carousel-prev" aria-label="Previous">
+              <svg viewBox="0 0 14 14"><path d="M9 1 3 7l6 6"/></svg>
+            </button>
+
+            <div class="carousel-track-wrapper">
+              <div class="carousel-track" id="latteTrack">
+
+                <div class="latte-slide">
+                  <div class="latte-card">
+                    <div class="latte-card-image">
+                      <img src="YOUR_BARISTA_CHAI_IMAGE" alt="Barista Chai Latte Mix" />
+                    </div>
+                    <div class="latte-card-content">
+                      <span class="section-title latte-badge">Barista</span>
+                      <h3 class="latte-name">Chai<br>Latte Mix</h3>
+                      <p class="latte-desc">Real spices blend with cane sugar and Indian and African black teas to make for an indulgent and spicy sipping experience.</p>
+                      <a href="#" class="latte-btn">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latte-slide">
+                  <div class="latte-card">
+                    <div class="latte-card-image">
+                      <img src="YOUR_BARISTA_MATCHA_IMAGE" alt="Barista Matcha Latte Mix" />
+                    </div>
+                    <div class="latte-card-content">
+                      <span class="section-title latte-badge">Barista</span>
+                      <h3 class="latte-name">Matcha<br>Latte Mix</h3>
+                      <p class="latte-desc">Our Barista Matcha will satisfy those who will like to enjoy a sweet treat. Pure Japanese matcha blends with cane sugar to make for a rich and satisfying sipping experience.</p>
+                      <a href="#" class="latte-btn">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="latte-slide">
+                  <div class="latte-card">
+                    <div class="latte-card-image">
+                      <img src="YOUR_NICE_CHAI_IMAGE" alt="Nice Chai Latte Mix" />
+                    </div>
+                    <div class="latte-card-content">
+                      <span class="section-title latte-badge">Nice</span>
+                      <h3 class="latte-name">Chai<br>Latte Mix</h3>
+                      <p class="latte-desc">Our Nice Chai is a not too sweet, not too spicy, powdered latte mix meant for making tea lattes simple.</p>
+                      <a href="#" class="latte-btn">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <button class="carousel-arrow carousel-next" aria-label="Next">
+              <svg viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- ─── JOURNAL SECTION ─── -->
+        <section id="journal">
+          <div class="journal-section-header">
+            <span class="section-title journal-title">Journal</span>
+            <div class="context-text">
+              <h2>A community steeped in <i>curiosity</i>. Explore recipes, culture, and everyday tea wisdom.</h2>
+            </div>
+          </div>
+          <div class="journal-carousel-wrap">
+            <button class="slider-btn journal-slider-btn" id="jPrev" onclick="jScroll(-2)" aria-label="Previous">
+              <svg viewBox="0 0 14 14"><path d="M9 1 3 7l6 6"/></svg>
+            </button>
+
+            <div class="journal-carousel-clip">
+              <div class="journal-carousel">
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#b8d4f0;">
+                    <span class="journal-card-badge">Recipe</span>
+                    <img src="YOUR_IMAGE_1" alt="London Fog Earl Grey Latte" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">London Fog Earl Grey Latte</p>
+                  </div>
+                </a>
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#7dbe5a;">
+                    <span class="journal-card-badge">Caffeine</span>
+                    <img src="YOUR_IMAGE_2" alt="Nice Matcha Drinks To Delight!" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">Nice Matcha Drinks To Delight!</p>
+                  </div>
+                </a>
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#5aab3c;">
+                    <span class="journal-card-badge">Matcha</span>
+                    <img src="YOUR_IMAGE_3" alt="Nice Iced Matcha Latte" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">"Nice" Iced Matcha Latte</p>
+                  </div>
+                </a>
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#c8e6a0;">
+                    <span class="journal-card-badge">Matcha</span>
+                    <img src="YOUR_IMAGE_4" alt="Matcha Energy Balls" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">Matcha Energy Balls</p>
+                  </div>
+                </a>
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#1a2a5e;">
+                    <span class="journal-card-badge">Tea 101</span>
+                    <img src="YOUR_IMAGE_5" alt="5 Reasons To Try Herbal Teas" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">5 Reasons To Try Herbal Teas</p>
+                  </div>
+                </a>
+
+                <a href="#" class="journal-card">
+                  <div class="journal-card-media" style="background:#f5c98a;">
+                    <span class="journal-card-badge">Culture</span>
+                    <img src="YOUR_IMAGE_6" alt="The Art of the Tea Ceremony" />
+                  </div>
+                  <div class="journal-card-info">
+                    <p class="journal-card-title">The Art of the Tea Ceremony</p>
+                  </div>
+                </a>
+
+              </div><!-- /.journal-carousel -->
+            </div><!-- /.journal-carousel-clip -->
+
+            <div class="journal-slider-nav">
+              <button class="slider-btn journal-slider-btn" id="jNext" onclick="jScroll(2)" aria-label="Next">
+                <svg viewBox="0 0 14 14"><path d="M5 1l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div><!-- /.journal-carousel-wrap -->
+          <div class="more-journal-content">
+            <a href="" class="more-journal-button">Explore The Tea Journal</a>
+          </div>
+        </section>
+
+        <!-- ─── ABOUT SECTION ─── -->
+        <section id="about">
+          <div class="background-img">
+            <img src="assets/Two_Leaves_Tea_banner.png" alt="organic tumeric tea">
+          </div>
+          <div class="about-card">
+            <h2>Great Tea. In Good Company.</h2>
+            <div class="about-card-bottom">
+              <p>Discover the people, places, and purpose behind every blend.</p>
+              <a href="" class="about-btn">About us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── FOOTER ─── -->
+        <footer>
+          <!-- Newsletter bar -->
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-left">
+              <h2 class="footer-newsletter-heading">Steep With Us</h2>
+              <p class="footer-newsletter-desc">Get news stories, brewing tips, and special offers straight to your inbox.</p>
+              <div class="footer-newsletter-form">
+                <input type="email" placeholder="name@email.com" id="email" />
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="footer-social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer link grid -->
+          <div class="footer-grid-wrap">
+            <div class="footer-grid">
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Tea Varieties</div>
+                <div class="footer-col-links">
+                  <a href="#">Whole Leaf Tea Sachets</a>
+                  <a href="#">Pure Matcha</a>
+                  <a href="#">Tea Lattes</a>
+                  <a href="#">Iced Tea</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Collections</div>
+                <div class="footer-col-links">
+                  <a href="#">Matcha</a>
+                  <a href="#">Chai</a>
+                  <a href="#">Organic Tea</a>
+                  <a href="#">Naked Tea Sachets</a>
+                  <a href="#">Black Tea</a>
+                  <a href="#">Green Tea</a>
+                  <a href="#">Herbal Tea</a>
+                  <a href="#">Caffeine-Free</a>
+                  <a href="#">Gift &amp; Samplers</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Lattes</div>
+                <div class="footer-col-links">
+                  <a href="#">Nice Matcha</a>
+                  <a href="#">Barista Matcha</a>
+                  <a href="#">Nice Chai</a>
+                  <a href="#">Barista Chai</a>
+                  <a href="#">Two Roots Golden Latte</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Learn</div>
+                <div class="footer-col-links">
+                  <a href="#">Our Story</a>
+                  <a href="#">Our Spirit</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Reviews</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Tea Journal</div>
+                <div class="footer-col-links">
+                  <a href="#">All Articles</a>
+                  <a href="#">Tea 101</a>
+                  <a href="#">Recipes</a>
+                  <a href="#">Sustainability</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Support</div>
+                <div class="footer-col-links">
+                  <a href="#">Contact</a>
+                  <a href="#">My Account</a>
+                  <a href="#">Loyal-Tea</a>
+                  <a href="#">Shipping &amp; Returns</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms &amp; Conditions</a>
+                </div>
+              </div>
+
+              <div class="footer-col">
+                <div class="footer-col-heading">Cafe &amp; Wholesale Partners</div>
+                <div class="footer-col-links">
+                  <a href="#">Cafe &amp; Wholesale Partners</a>
+                  <a href="#">Wholesale Login</a>
+                  <a href="#">Product and Media Files</a>
+                  <a href="#">Displays &amp; Starter Kits</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer bottom / copyright -->
+          <div class="footer-bottom">
+            <a href="#" class="footer-logo">
+              <img src="assets/two_leaves_logo_blue.png" alt="two_leaves_logo">
+            </a>
+            <div class="footer-bottom-text">
+              <p>© TWO LEAVES AND A BUD 2026</p>
+              <p>SITE BY MANUFACTUR</p>
+            </div>
+          </div>
+
+        </footer>
+      </div>
+    </div><!-- /#site -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+          <h2>My Cart</h2>
+          <div class="cart-shipping-bar" id="shippingBar">YOU ARE $75 AWAY FROM FREE SHIPPING!</div>
+        </div>
+        <div class="cart-body" id="cartBody">
+          <p class="cart-empty" id="cartEmpty">Your Cart is Empty</p>
+          <div class="cart-items" id="cartItemsList"></div>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-gift-row" style="flex-direction: column; align-items: flex-start;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <input type="checkbox" id="giftCheck">
+              <label for="giftCheck">Is this a gift?</label>
+            </div>
+            <textarea class="cart-gift-note" id="giftNote" placeholder="Write your note"></textarea>
+          </div>
+          <button class="cart-checkout-btn">Checkout</button>
+          <p class="cart-shipping-note"><a href="#">Shipping</a> and taxes calculated at checkout</p>
+        </div>
+      </div>
+      <div id="mobile-menu-overlay"></div>
+      <div id="mobile-menu-drawer" aria-label="Mobile navigation">
+        <button id="mobile-menu-close" aria-label="Close menu">×</button>
+        <span class="mobile-menu-label">Shop</span>
+        <a href="#" class="mobile-menu-link">Whole Leaf Tea Sachets</a>
+        <a href="#" class="mobile-menu-link">Pure Matcha</a>
+        <a href="#" class="mobile-menu-link">Tea Lattes</a>
+        <a href="#" class="mobile-menu-link">Iced Tea</a>
+        <span class="mobile-menu-label">Collections</span>
+        <a href="#" class="mobile-menu-link">Matcha</a>
+        <a href="#" class="mobile-menu-link">Chai</a>
+        <a href="#" class="mobile-menu-link">Organic Tea</a>
+        <a href="#" class="mobile-menu-link">Gifts &amp; Samplers</a>
+        <span class="mobile-menu-label">Learn</span>
+        <a href="#" class="mobile-menu-link">Our Story</a>
+        <a href="#" class="mobile-menu-link">Our Spirit</a>
+        <a href="#" class="mobile-menu-link">For Cafes &amp; Partners</a>
+        <span class="mobile-menu-label">More</span>
+        <a href="#" class="mobile-menu-link">Reviews</a>
+        <a href="#" class="mobile-menu-link">Tea Journal</a>
+        <a href="#" class="mobile-menu-link">My Account</a>
+        <a href="#" class="mobile-menu-link">Cafe &amp; Wholesale Partners</a>
+      </div>
+      <script src="js/script.js"></script>
+  </body>
+</html>
