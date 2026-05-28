@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadence™ | Hydration & Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- =============================================
+   ANNOUNCEMENT BAR
+============================================= -->
+<div class="announcement-bar" aria-label="Store announcements">
+  <div class="announcement-bar__list" id="annBar">
+    <div class="announcement-bar__item active">Free Shipping over £50</div>
+    <span class="announcement-bar__sep">|</span>
+    <div class="announcement-bar__item active">Free Cap with Every Subscription</div>
+    <span class="announcement-bar__sep">|</span>
+    <div class="announcement-bar__item active">Backed by Science · Zero Sugar · No Compromise</div>
+  </div>
+</div>
+
+<!-- =============================================
+   HEADER
+============================================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="mobile-left-controls">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="mobile-search-btn header-actions__icon" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M15 15l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+    <nav class="header-nav">
+      <!-- Shop with dropdown -->
+      <div class="nav-shop">
+        <span class="nav-shop__label">
+          Shop
+        </span>
+        <div class="nav-shop__dropdown">
+          <div class="mega-inner">
+            <!-- Left sidebar: category links -->
+            <div class="mega-sidebar">
+              <a href="#" class="sidebar-featured">Shop All Products</a>
+              <a href="#" class="sidebar-featured">Bestsellers</a>
+              <div class="sidebar-divider"></div>
+              <a href="#">Electrolyte Sachets</a>
+              <a href="#">Electrolyte Drinks</a>
+              <a href="#">Core Gel</a>
+              <a href="#">Fuel Bars</a>
+              <a href="#">Bundles</a>
+            </div>
+            <!-- Right: product grid + CTA -->
+            <div class="mega-products">
+              <div class="mega-products__grid">
+                <!-- Card 1 -->
+                <a href="#" class="mega-product-card pcard--1">
+                  <span class="mega-product-card__badge">SAVE 30%</span>
+                  <div class="mega-product-card__img">
+                    <div class="product-shape">
+                      <svg viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="5" width="40" height="110" rx="6" fill="#b8b4ac" opacity="0.6"/>
+                        <rect x="16" y="18" width="28" height="4" rx="2" fill="#888" opacity="0.5"/>
+                        <rect x="20" y="26" width="20" height="2" rx="1" fill="#888" opacity="0.4"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mega-product-card__body">
+                    <p class="mega-product-card__name">Hydration Sachet Stack — Variety Pack</p>
+                    <div class="mega-product-card__prices">
+                      <span class="mega-product-card__old">£34.99</span>
+                      <span class="mega-product-card__new">£24.49</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="#" class="mega-product-card pcard--2">
+                  <span class="mega-product-card__badge">SAVE 30%</span>
+                  <div class="mega-product-card__img">
+                    <div class="product-shape">
+                      <svg viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="4" width="24" height="112" rx="5" fill="#aab4ac" opacity="0.55"/>
+                        <rect x="12" y="16" width="16" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mega-product-card__body">
+                    <p class="mega-product-card__name">Core Hydration Sachets — Melonberry</p>
+                    <div class="mega-product-card__prices">
+                      <span class="mega-product-card__old">£34.99</span>
+                      <span class="mega-product-card__new">£24.49</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="#" class="mega-product-card pcard--3">
+                  <span class="mega-product-card__badge">SAVE 30%</span>
+                  <div class="mega-product-card__img">
+                    <div class="product-shape">
+                      <svg viewBox="0 0 40 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="6" width="20" height="118" rx="4" fill="#b4acb4" opacity="0.55"/>
+                        <rect x="13" y="18" width="14" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mega-product-card__body">
+                    <p class="mega-product-card__name">Fuel Gel</p>
+                    <div class="mega-product-card__prices">
+                      <span class="mega-product-card__old">£29.99</span>
+                      <span class="mega-product-card__new">£20.99</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- Card 4 -->
+                <a href="#" class="mega-product-card pcard--4">
+                  <span class="mega-product-card__badge">SAVE 30%</span>
+                  <div class="mega-product-card__img">
+                    <div class="product-shape">
+                      <svg viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="4" width="24" height="112" rx="5" fill="#acb4b4" opacity="0.55"/>
+                        <rect x="12" y="16" width="16" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mega-product-card__body">
+                    <p class="mega-product-card__name">Core Fuel Bar — Chocolate</p>
+                    <div class="mega-product-card__prices">
+                      <span class="mega-product-card__old">£27.00</span>
+                      <span class="mega-product-card__new">£18.90</span>
+                    </div>
+                  </div>
+                </a>
+                <!-- Card 5 -->
+                <a href="#" class="mega-product-card pcard--5">
+                  <span class="mega-product-card__badge">SAVE 30%</span>
+                  <div class="mega-product-card__img">
+                    <div class="product-shape">
+                      <svg viewBox="0 0 30 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="4" width="18" height="92" rx="4" fill="#b4b4ac" opacity="0.55"/>
+                        <rect x="9" y="14" width="12" height="2.5" rx="1.2" fill="#888" opacity="0.45"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mega-product-card__body">
+                    <p class="mega-product-card__name">Sleep Hydration Sachets</p>
+                    <div class="mega-product-card__prices">
+                      <span class="mega-product-card__old">£34.99</span>
+                      <span class="mega-product-card__new">£24.49</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Bottom CTA bar -->
+              <div class="mega-cta-strip"><a href="#">See All Subscribe &amp; Save Deals</a></div>
+              <p class="mega-promo-note">Free Gifts with Month 2 &amp; 3. Save Monthly Recurring 15% Off. Cancel Anytime · No Commitment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#">Science</a>
+      <a href="#">Fuel Club</a>
+      <div class="nav-stores">
+        <span class="nav-stores__label">Stores</span>
+        <div class="nav-stores__dropdown">
+          <a href="#">Store Locator</a>
+          <a href="#">Become a Stockist</a>
+        </div>
+      </div>
+      <a href="#">Athletes</a>
+    </nav>
+    <a href="#" class="header-logo">Cadence</a>
+    <div class="header-actions">
+      <!-- Region -->
+      <div class="header-actions__region">
+        <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="22" height="16" rx="2" fill="#012169"/>
+          <path d="M0 0l22 16M22 0L0 16" stroke="white" stroke-width="3.2"/>
+          <path d="M0 0l22 16M22 0L0 16" stroke="#C8102E" stroke-width="2"/>
+          <path d="M11 0v16M0 8h22" stroke="white" stroke-width="4.5"/>
+          <path d="M11 0v16M0 8h22" stroke="#C8102E" stroke-width="2.8"/>
+        </svg>
+        <span>United Kingdom (GBP £)</span>
+        <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:8px;height:8px">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <!-- Account icon -->
+      <a href="#" class="header-actions__icon" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <!-- Search icon -->
+      <a href="#" class="header-actions__icon desktop-search-icon" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M15 15l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <!-- Cart icon -->
+      <a href="#" class="header-actions__icon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="20" r="1.2" fill="currentColor"/>
+          <circle cx="18" cy="20" r="1.2" fill="currentColor"/>
+          <path d="M1 1h2.5l2.3 11.5h10.7l2-8H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav-drawer" id="mobileDrawer">
+  <div class="mobile-nav-drawer__overlay" id="drawerOverlay"></div>
+  <div class="mobile-nav-drawer__panel">
+    <div class="mobile-nav-links">
+      <button class="mobile-nav-shop-toggle" id="shopToggle">
+        Shop
+        <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mobile-nav-submenu" id="shopSubmenu">
+        <a href="#">Shop All Products</a>
+        <a href="#">Bestsellers</a>
+        <a href="#">Electrolyte Sachets</a>
+        <a href="#">Electrolyte Drinks</a>
+        <a href="#">Core Gel</a>
+        <a href="#">Fuel Bars</a>
+        <a href="#">Bundles</a>
+      </div>
+      <a href="#">Science</a>
+      <a href="#">Fuel Club</a>
+      <a href="#">Stores</a>
+      <a href="#">Athletes</a>
+
+      <!-- SUBSCRIBE & SAVE -->
+      <div class="drawer-section-label">Subscribe &amp; Save</div>
+      <div class="drawer-product-slider">
+        <div class="drawer-product-track" id="drawerProductTrack">
+          <a href="#" class="drawer-product-card">
+            <div class="drawer-product-card__img">
+              <div class="product-shape">
+                <svg viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="5" width="40" height="110" rx="6" fill="#b8b4ac" opacity="0.6"/>
+                  <rect x="16" y="18" width="28" height="4" rx="2" fill="#888" opacity="0.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-product-card__body">
+              <span class="drawer-product-card__badge">SAVE 30%</span>
+              <p class="drawer-product-card__name">Hydration Sachet Stack - Variety Pack</p>
+              <div class="drawer-product-card__prices">
+                <span class="drawer-product-card__old">£34.99</span>
+                <span class="drawer-product-card__new">£24.49</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="drawer-product-card">
+            <div class="drawer-product-card__img">
+              <div class="product-shape">
+                <svg viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="4" width="24" height="112" rx="5" fill="#aab4ac" opacity="0.55"/>
+                  <rect x="12" y="16" width="16" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-product-card__body">
+              <span class="drawer-product-card__badge">SAVE 30%</span>
+              <p class="drawer-product-card__name">Core Hydration Sachets - Melonberry</p>
+              <div class="drawer-product-card__prices">
+                <span class="drawer-product-card__old">£34.99</span>
+                <span class="drawer-product-card__new">£24.49</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="drawer-product-card">
+            <div class="drawer-product-card__img">
+              <div class="product-shape">
+                <svg viewBox="0 0 40 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="6" width="20" height="118" rx="4" fill="#b4acb4" opacity="0.55"/>
+                  <rect x="13" y="18" width="14" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-product-card__body">
+              <span class="drawer-product-card__badge">SAVE 30%</span>
+              <p class="drawer-product-card__name">Fuel Gel</p>
+              <div class="drawer-product-card__prices">
+                <span class="drawer-product-card__old">£29.99</span>
+                <span class="drawer-product-card__new">£20.99</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="drawer-product-card">
+            <div class="drawer-product-card__img">
+              <div class="product-shape">
+                <svg viewBox="0 0 40 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="4" width="24" height="112" rx="5" fill="#acb4b4" opacity="0.55"/>
+                  <rect x="12" y="16" width="16" height="3" rx="1.5" fill="#888" opacity="0.45"/>
+                </svg>
+              </div>
+            </div>
+            <div class="drawer-product-card__body">
+              <span class="drawer-product-card__badge">SAVE 30%</span>
+              <p class="drawer-product-card__name">Core Fuel Bar - Chocolate</p>
+              <div class="drawer-product-card__prices">
+                <span class="drawer-product-card__old">£27.00</span>
+                <span class="drawer-product-card__new">£18.90</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="drawer-slider-arrow drawer-slider-arrow--prev" id="drawerPrev" aria-label="Previous">
+          <svg viewBox="0 0 10 10" fill="none"><path d="M6 2L3 5l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="drawer-slider-arrow drawer-slider-arrow--next" id="drawerNext" aria-label="Next">
+          <svg viewBox="0 0 10 10" fill="none"><path d="M4 2l3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <a href="#" class="drawer-cta-strip">SEE ALL SUBSCRIBE &amp; SAVE DEALS</a>
+      <p class="drawer-promo-note">Free Gifts with Month 2 &amp; 3. Save Monthly Recurring 15% Off. Cancel Anytime · No Commitment.</p>
+
+      <!-- REGION -->
+      <div class="drawer-region">
+        <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:22px;height:16px;flex-shrink:0">
+          <rect width="22" height="16" rx="2" fill="#012169"/>
+          <path d="M0 0l22 16M22 0L0 16" stroke="white" stroke-width="3.2"/>
+          <path d="M0 0l22 16M22 0L0 16" stroke="#C8102E" stroke-width="2"/>
+          <path d="M11 0v16M0 8h22" stroke="white" stroke-width="4.5"/>
+          <path d="M11 0v16M0 8h22" stroke="#C8102E" stroke-width="2.8"/>
+        </svg>
+        <span>United Kingdom (GBP £)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+   HERO
+============================================= -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Modern Sports Hydration</p>
+    <h1 class="hero__title">
+      <span>Science-backed, zero sugar</span>
+      Modern<br>Sports<br>Hydration.
+    </h1>
+    <p class="hero__desc">Clinically dosed electrolytes for daily movement, peak performance, and recovery. No gimmicks. No sugar. Just what your body needs.</p>
+    <div class="hero__cta">
+      <a href="#" class="btn-primary">Shop All Products</a>
+    </div>
+  </div>
+  <div class="hero__stat">
+    <div class="hero__stat__num">3×</div>
+    <div class="hero__stat__label">Electrolytes</div>
+  </div>
+</section>
+
+<!-- =============================================
+   VERTICAL CARD STACK
+============================================= -->
+<section class="stack-section">
+  <p class="stack-section__label">Product Range</p>
+  <div class="stack-wrap" id="stackWrap">
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--1"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">All Products</p>
+          <p class="stack-card__title">Hydrate Smarter. Train Harder. Recover Faster.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--2"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">Sachets</p>
+          <p class="stack-card__title">Our 24 Hour Hydration System To Support Hydration, Energy & Sleep.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--3"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">Bundles</p>
+          <p class="stack-card__title">Build A System Specific For Your Goals.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--4"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">Drinks</p>
+          <p class="stack-card__title">Zero Sugar Electrolyte Drinks Designed To Replenish.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--5"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">Core Gel</p>
+          <p class="stack-card__title">Dual Carb Fuel & Hydration Support For Endurance.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-card__inner">
+        <div class="stack-card__bg stack-card__bg--6"></div>
+        <div class="stack-card__content">
+          <p class="stack-card__category">Fuel Bars</p>
+          <p class="stack-card__title">40g Fast Acting Fuel Formula. Organic & Natural Ingredients.</p>
+          <a href="#" class="stack-card__btn">Discover</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+   BENEFITS / HYDRATION SECTION
+============================================= -->
+<section class="benefits">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div class="benefits__header reveal">
+      <h2>Hydration Benefits</h2>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-card__img benefit-card__img--1"></div>
+        <div class="benefit-card__body">
+          <h3 class="benefit-card__title">Physical Performance</h3>
+          <p class="benefit-card__text">Hydration with electrolytes, particularly sodium and potassium, has been found to aid performance during prolonged exercise. Staying hydrated is key for strength, power, and high-intensity endurance.</p>
+          <a href="#" class="btn-text-link">Learn more</a>
+        </div>
+      </div>
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-card__img benefit-card__img--2"></div>
+        <div class="benefit-card__body">
+          <h3 class="benefit-card__title">Cognitive Function</h3>
+          <p class="benefit-card__text">Adequate hydration with magnesium is linked to maintenance of normal brain function. Studies show increased brain magnesium may improve cognitive functions such as memory and attention.</p>
+          <a href="#" class="btn-text-link">Learn more</a>
+        </div>
+      </div>
+      <div class="benefit-card reveal reveal-delay-3">
+        <div class="benefit-card__img benefit-card__img--3"></div>
+        <div class="benefit-card__body">
+          <h3 class="benefit-card__title">Muscular Recovery</h3>
+          <p class="benefit-card__text">Electrolytes, especially magnesium, play a significant role in post-exercise recovery. Studies show magnesium may significantly reduce muscle soreness and improve perceived recovery.</p>
+          <a href="#" class="btn-text-link">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =============================================
+   SCIENCE BLOG SECTION
+============================================= -->
+<section class="science-section">
+  <div class="science-section__header reveal">
+    <h2>Science</h2>
+    <a href="#" class="science-section__see-all">See all</a>
+  </div>
+  <div class="science-grid">
+    <div class="article-card reveal reveal-delay-1">
+      <div class="article-card__img article-card__img--1"></div>
+      <div class="article-card__body">
+        <h3 class="article-card__title">The Core Gel — From Science to Strategy</h3>
+        <p class="article-card__excerpt">Energy gels have become synonymous with endurance, and rightly so. In the following article we discuss the science of gels and present an evidence-based strategy...</p>
+      </div>
+    </div>
+    <div class="article-card reveal reveal-delay-2">
+      <div class="article-card__img article-card__img--2"></div>
+      <div class="article-card__body">
+        <h3 class="article-card__title">Training the Gut</h3>
+        <p class="article-card__excerpt">As endurance enthusiasts we diligently plan our training, with great emphasis on mileage, pace and even recovery. But one variable we often overlook is the gut...</p>
+      </div>
+    </div>
+    <div class="article-card reveal reveal-delay-3">
+      <div class="article-card__img article-card__img--3"></div>
+      <div class="article-card__body">
+        <h3 class="article-card__title">Fuelling 192km in 24 Hours</h3>
+        <p class="article-card__excerpt">On Saturday 21st June, Hercules Nicolaou ran at HARP 24, a 24 hour race in which individuals must complete as many 8km laps as possible...</p>
+      </div>
+    </div>
+    <div class="article-card reveal reveal-delay-4">
+      <div class="article-card__img article-card__img--4"></div>
+      <div class="article-card__body">
+        <h3 class="article-card__title">Ultramarathon Nutrition Guide</h3>
+        <p class="article-card__excerpt">An evidence-based guide to fuelling ultra endurance events — from nutrition strategy to hydration planning and race-day execution...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+   FOOTER
+============================================= -->
+<footer>
+  <div class="footer-block">
+    <!-- Email signup row -->
+    <div class="footer-signup">
+      <div>
+        <h3 class="footer-signup__heading">Join the Cadence Club</h3>
+      </div>
+      <div class="footer-signup__right">
+        <p>Subscribe for product updates, insight and offers.</p>
+        <div class="footer-signup__form">
+          <input type="email" placeholder="Email">
+          <button type="button">
+            Subscribe
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <p class="footer-signup__note">This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.</p>
+        <!-- Social icons -->
+        <div class="footer-social" style="margin-top:20px">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 9l5 3-5 3V9z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M7 10v7M7 7v.5M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Shop Cadence™</h4>
+        <ul>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Hydration Bundles</a></li>
+          <li><a href="#">Electrolyte Sachets</a></li>
+          <li><a href="#">Electrolyte Drinks</a></li>
+          <li><a href="#">Constant Cadence™</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Subscription Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Advisors</a></li>
+          <li><a href="#">Hydration</a></li>
+          <li><a href="#">Sodium</a></li>
+          <li><a href="#">Potassium</a></li>
+          <li><a href="#">Magnesium</a></li>
+          <li><a href="#">Cologne List®</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Client Services</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">T&amp;C's</a></li>
+          <li><a href="#">Become a Retailer</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="22" height="16" rx="2" fill="#012169"/>
+        <path d="M0 0l22 16M22 0L0 16" stroke="white" stroke-width="3.2"/>
+        <path d="M0 0l22 16M22 0L0 16" stroke="#C8102E" stroke-width="2"/>
+        <path d="M11 0v16M0 8h22" stroke="white" stroke-width="4.5"/>
+        <path d="M11 0v16M0 8h22" stroke="#C8102E" stroke-width="2.8"/>
+      </svg>
+      <select>
+        <option>UNITED KINGDOM (GBP £)</option>
+      </select>
+    </div>
+    <div class="footer-bottom-right">
+      <p>© Cadence UK 2026</p>
+    </div>
+  </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
