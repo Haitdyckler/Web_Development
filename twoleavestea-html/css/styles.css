@@ -914,7 +914,7 @@ body:has(.nav-dropdown-wrap:hover) .main-content {
 
 /* ─── BEST SELLER SECTION ─── */
 .best-sellers{
-    max-width:1600px;
+    max-width:auto;
     margin:50px auto;
     padding:0 40px;
 }
