@@ -1381,9 +1381,10 @@ footer{
   .promo-grid{
     padding:0 20px;
     gap:8px;
+    grid-template-columns:1fr;
     }
   .promo-large img{
-    height:380px;
+    height:185px;
     }
   .promo-small img{
     height:185px;
