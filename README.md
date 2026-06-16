@@ -17,8 +17,8 @@ A hydration and sports nutrition brand landing page. Built with vanilla HTML, CS
 A tea brand website implemented twice — once in vanilla HTML/CSS/JS and once in React — to compare approaches and explore component-based architecture.
 
 **Stack:** HTML · CSS · JavaScript · React
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/tree/previews/twoleavestea_1.png)
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/tree/previews/twoleavestea_2.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/twoleavestea_1.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/twoleavestea_2.png)
 
 ---
 
@@ -33,8 +33,8 @@ A restaurant or local food brand demo page built in React, showcasing component 
 A mock site for the iconic cymbal and drumstick brand, built in React.
 
 **Stack:** React
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/tree/previews/zildjian_1.png)
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/tree/previews/zildjian_2.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/zildjian_1.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/zildjian_2.png)
 
 ---
 
