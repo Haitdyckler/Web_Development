@@ -33,8 +33,8 @@ A restaurant or local food brand demo page built in React, showcasing component 
 A mock site for the iconic cymbal and drumstick brand, built in React.
 
 **Stack:** React
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/zildjian_1.png)
-![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/zildjian_2.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/ziljdian_1.png)
+![preview](https://raw.githubusercontent.com/Haitdyckler/Web_Development/main/previews/ziljdian_2.png)
 
 ---
 
